@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     
 		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="TemplateData/style.css" />
     <link rel="stylesheet" href="games.css" />
     
     <script src="TemplateData/UnityProgress.js"></script>
@@ -40,11 +41,9 @@
     <section id="game" class="wrapper styleGame" style="background-image:url('../images/grey_wall.jpg')">
       
     <div class="inner">
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div id="unityContainer" style="width: 1300px; height: 788px"></div>
       <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-
+        <button class="fullscreen_button" onclick="unityInstance.SetFullscreen(1)" style="background-image: url('TemplateData/fullscreen.png');"><br></button>
         <div class="title">Parasite</div>
         <p>A game made in 48 hours for the GMTK Game Jam 2020</p>
       <a href="https://itch.io/jam/gmtk-2020/rate/697584"><p>Check it out on Itch.io</p></a>
