@@ -171,9 +171,8 @@ var settings = {
 					if (options.indicators)
 						indicators[pos].addClass('visible');
 
-					// var links = ["#portfolio", "#weekly", "#jams", "#watty"]
-					// $("#bannerLink").attr('href', links[current]) 
-
+				
+				
 				// Finish hiding last slide after a short delay.
 					window.setTimeout(function() {
 

@@ -3603,6 +3603,20 @@
 				margin: 0;
 			}
 
+			.gallery .image.max-height{
+				margin: auto;
+				display: block;
+			}
+
+			.gallery .image.max-height img
+			{
+				max-height: 20rem;
+				width: auto;
+
+				margin: auto;
+				position: relative;
+			}
+
 		@media screen and (max-width: 980px) {
 
 			.gallery > * {

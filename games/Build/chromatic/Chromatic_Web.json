@@ -1,0 +1,17 @@
+{
+"companyName": "LydianChromaticGames",
+"productName": "Chromatic",
+"productVersion": "1",
+"dataUrl": "Chromatic_Web.data.unityweb",
+"wasmCodeUrl": "Chromatic_Web.wasm.code.unityweb",
+"wasmFrameworkUrl": "Chromatic_Web.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "Chromatic_Web.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.0f6"
+}
