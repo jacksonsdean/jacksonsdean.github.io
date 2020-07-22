@@ -4184,7 +4184,8 @@
 				}
 
 			.banner > article h2 {
-				font-size: 7rem;
+				/* font-size: 7rem; */
+				font-size: 7vw;
 				margin-bottom: 0;
 				color: #FFF;
 				font-weight: 300;
@@ -4197,7 +4198,8 @@
 			.banner > article p {
 				color: rgba(255, 255, 255, 0.65);
 				text-transform: uppercase;
-				font-size: 1rem;
+				/* font-size: 1rem; */
+				font-size: 1vw;
 				font-weight: 300;
 				margin: 0;
 				padding-bottom: 1.75rem;
