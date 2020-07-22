@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
-		<link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="games.css" />
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
@@ -14,41 +14,46 @@
 
     <title>Runner Prototype | Jackson Dean</title>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Runner/Web.json", {onProgress: UnityProgress});
+        var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Runner/Web.json", {
+            onProgress: UnityProgress
+        });
     </script>
 
-  </head>
+</head>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169262722-1"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169262722-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
 
-	gtag('config', 'UA-169262722-1');
-	</script>
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-169262722-1');
+</script>
 
 
 
 
-  <body>
-    	<!-- Header -->
-			<header id="header" class="alt">
-				<div class="logo"><a href="../index.html">Jackson Dean <span>Game Developer</span></a></div>
-			</header>
+<body>
+    <!-- Header -->
+    <header id="header" class="alt">
+        <div class="logo"><a href="../index.html">Jackson Dean <span>| Game Developer</span></a></div>
+    </header>
 
     <section id="game" class="wrapper styleGame" style="background-image:url('../images/paper.jpg')">
-      
-    <div class="inner">
-      <div id="unityContainer" style="width: 1300px; height: 788px"></div>
-      <div class="footer">
-        <button class="fullscreen_button" onclick="unityInstance.SetFullscreen(1)" style="background-image: url('TemplateData/fullscreen.png');"><br></button>
-        <h2>Untitled Procedural Runner Prototype</h2>
-      </div>
 
-    </div>
-      </section>
-  </body>
+        <div class="inner">
+            <div id="unityContainer" style="width: 1300px; height: 788px"></div>
+            <div class="footer">
+                <button class="fullscreen_button" onclick="unityInstance.SetFullscreen(1)" style="background-image: url('TemplateData/fullscreen.png');"><br></button>
+                <h2>Untitled Procedural Runner Prototype</h2>
+            </div>
+
+        </div>
+    </section>
+</body>
+
 </html>
-

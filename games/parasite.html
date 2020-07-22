@@ -1,55 +1,63 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    
-		<link rel="stylesheet" href="../assets/css/main.css" />
-		<link rel="stylesheet" href="TemplateData/style.css" />
+
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="TemplateData/style.css" />
     <link rel="stylesheet" href="games.css" />
-    
+
     <script src="TemplateData/UnityProgress.js"></script>
-    
+
 
     <title>Parasite | Jackson Dean</title>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Parasite/Build_Web.json", {onProgress: UnityProgress});  
+        var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Parasite/Build_Web.json", {
+            onProgress: UnityProgress
+        });
     </script>
 
 
-  </head>
+</head>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169262722-1"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169262722-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
 
-	gtag('config', 'UA-169262722-1');
-	</script>
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-  <body>
-    	<!-- Header -->
-			<header id="header" class="alt">
-				<div class="logo"><a href="../index.html">Jackson Dean <span>Game Developer</span></a></div>
-			</header>
+    gtag('config', 'UA-169262722-1');
+</script>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="alt">
+        <div class="logo"><a href="../index.html">Jackson Dean <span>| Game Developer</span></a></div>
+    </header>
 
     <section id="game" class="wrapper styleGame" style="background-image:url('../images/grey_wall.jpg')">
-      
-    <div class="inner">
-      <div id="unityContainer" style="width: 1300px; height: 788px"></div>
-      <div class="footer">
-        <button class="fullscreen_button" onclick="unityInstance.SetFullscreen(1)" style="background-image: url('TemplateData/fullscreen.png');"><br></button>
-        <div class="title">Parasite</div>
-        <p>A game made in 48 hours for the GMTK Game Jam 2020</p>
-      <a target="_blank" href="https://lydianchromatic.itch.io/parasite"><p>Check it out on Itch.io</p></a>
-      </div>
-    </div>
-      </section>
-  </body>
-</html>
 
+        <div class="inner">
+            <div id="unityContainer" style="width: 1300px; height: 788px"></div>
+            <div class="footer">
+                <button class="fullscreen_button" onclick="unityInstance.SetFullscreen(1)" style="background-image: url('TemplateData/fullscreen.png');"><br></button>
+                <div class="title">Parasite</div>
+                <p>A game made in 48 hours for the GMTK Game Jam 2020</p>
+                <a target="_blank" href="https://lydianchromatic.itch.io/parasite">
+                    <p>Check it out on Itch.io</p>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

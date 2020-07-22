@@ -1,296 +1,312 @@
-.fullscreen_button {height: 100%; display: inline-block; background: transparent center no-repeat;}
-.fullscreen_button {background-image: url('TemplateData/fullscreen.png'); width: 38px; float: right; margin-right:5rem}
+.fullscreen_button {
+    height: 100%;
+    display: inline-block;
+    background: transparent center no-repeat;
+}
+
+.fullscreen_button {
+    background-image: url('TemplateData/fullscreen.png');
+    width: 38px;
+    float: right;
+    margin-right: 5rem
+}
+
 
 /* Wrapper */
 
 .wrapper {
-    padding: 6rem 0 10rem 0 ;
+    padding: 6rem 0 10rem 0;
     position: relative;
     margin: 0;
 }
 
-    .wrapper > .inner {
-        margin: 0 auto;
-        width: 80rem;
-    }
+.wrapper>.inner {
+    margin: 0 auto;
+    width: 80rem;
+}
 
-			.wrapper.styleGame {
-				background-color: #000;
-				color: #bfbfbf;
-				background-image: url(../../images/bg.jpg);
-				background-size: cover;
-				background-attachment: fixed;
-				background-position: center;
-				position: relative;
-			}
-	
-				.wrapper.styleGame input, .wrapper.styleGame select, .wrapper.styleGame textarea {
-					color: #ffffff;
-				}
-	
-				.wrapper.styleGame a {
-					color: #8a4680;
-				}
-	
-				.wrapper.styleGame strong, .wrapper.styleGame b {
-					color: #ffffff;
-				}
-	
-				.wrapper.styleGame h1, .wrapper.styleGame h2, .wrapper.styleGame h3, .wrapper.styleGame h4, .wrapper.styleGame h5, .wrapper.styleGame h6 {
-					color: #ffffff;
-				}
-	
-				.wrapper.styleGame blockquote {
-					border-left-color: rgba(255, 255, 255, 0.25);
-				}
-	
-				.wrapper.styleGame code {
-					background: rgba(255, 255, 255, 0.075);
-					border-color: rgba(255, 255, 255, 0.25);
-				}
-	
-				.wrapper.styleGame hr {
-					border-bottom-color: rgba(255, 255, 255, 0.25);
-				}
-	
-				.wrapper.styleGame .box {
-					border-color: rgba(255, 255, 255, 0.25);
-				}
-	
-				.wrapper.styleGame input[type="submit"],
-				.wrapper.styleGame input[type="reset"],
-				.wrapper.styleGame input[type="button"],
-				.wrapper.styleGame button,
-				.wrapper.styleGame .button {
-					background-color: #f2f2f2;
-					color: #000 !important;
-				}
-	
-					.wrapper.styleGame input[type="submit"]:hover,
-					.wrapper.styleGame input[type="reset"]:hover,
-					.wrapper.styleGame input[type="button"]:hover,
-					.wrapper.styleGame button:hover,
-					.wrapper.styleGame .button:hover {
-						background-color: white;
-					}
-	
-					.wrapper.styleGame input[type="submit"]:active,
-					.wrapper.styleGame input[type="reset"]:active,
-					.wrapper.styleGame input[type="button"]:active,
-					.wrapper.styleGame button:active,
-					.wrapper.styleGame .button:active {
-						background-color: #e5e5e5;
-					}
-	
-					.wrapper.styleGame input[type="submit"].alt,
-					.wrapper.styleGame input[type="reset"].alt,
-					.wrapper.styleGame input[type="button"].alt,
-					.wrapper.styleGame button.alt,
-					.wrapper.styleGame .button.alt {
-						background-color: transparent;
-						box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
-						color: #ffffff !important;
-					}
-	
-						.wrapper.styleGame input[type="submit"].alt:hover,
-						.wrapper.styleGame input[type="reset"].alt:hover,
-						.wrapper.styleGame input[type="button"].alt:hover,
-						.wrapper.styleGame button.alt:hover,
-						.wrapper.styleGame .button.alt:hover {
-							background-color: rgba(255, 255, 255, 0.075);
-						}
-	
-						.wrapper.styleGame input[type="submit"].alt:active,
-						.wrapper.styleGame input[type="reset"].alt:active,
-						.wrapper.styleGame input[type="button"].alt:active,
-						.wrapper.styleGame button.alt:active,
-						.wrapper.styleGame .button.alt:active {
-							background-color: rgba(255, 255, 255, 0.2);
-						}
-	
-						.wrapper.styleGame input[type="submit"].alt.icon:before,
-						.wrapper.styleGame input[type="reset"].alt.icon:before,
-						.wrapper.styleGame input[type="button"].alt.icon:before,
-						.wrapper.styleGame button.alt.icon:before,
-						.wrapper.styleGame .button.alt.icon:before {
-							color: #999999;
-						}
-	
-					.wrapper.styleGame input[type="submit"].special,
-					.wrapper.styleGame input[type="reset"].special,
-					.wrapper.styleGame input[type="button"].special,
-					.wrapper.styleGame button.special,
-					.wrapper.styleGame .button.special {
-						background-color: #8a4680;
-						color: #ffffff !important;
-					}
-	
-						.wrapper.styleGame input[type="submit"].special:hover,
-						.wrapper.styleGame input[type="reset"].special:hover,
-						.wrapper.styleGame input[type="button"].special:hover,
-						.wrapper.styleGame button.special:hover,
-						.wrapper.styleGame .button.special:hover {
-							background-color: #9b4f90;
-						}
-	
-						.wrapper.styleGame input[type="submit"].special:active,
-						.wrapper.styleGame input[type="reset"].special:active,
-						.wrapper.styleGame input[type="button"].special:active,
-						.wrapper.styleGame button.special:active,
-						.wrapper.styleGame .button.special:active {
-							background-color: #793d70;
-						}
-	
-				.wrapper.styleGame label {
-					color: #ffffff;
-				}
-	
-				.wrapper.styleGame input[type="text"],
-				.wrapper.styleGame input[type="password"],
-				.wrapper.styleGame input[type="email"],
-				.wrapper.styleGame select,
-				.wrapper.styleGame textarea {
-					background: rgba(255, 255, 255, 0.075);
-					border-color: rgba(255, 255, 255, 0.25);
-				}
-	
-					.wrapper.styleGame input[type="text"]:focus,
-					.wrapper.styleGame input[type="password"]:focus,
-					.wrapper.styleGame input[type="email"]:focus,
-					.wrapper.styleGame select:focus,
-					.wrapper.styleGame textarea:focus {
-						border-color: #8a4680;
-						box-shadow: 0 0 0 1px #8a4680;
-					}
-	
-				.wrapper.styleGame .select-wrapper:before {
-					color: rgba(255, 255, 255, 0.25);
-				}
-	
-				.wrapper.styleGame input[type="checkbox"] + label,
-				.wrapper.styleGame input[type="radio"] + label {
-					color: #bfbfbf;
-				}
-	
-					.wrapper.styleGame input[type="checkbox"] + label:before,
-					.wrapper.styleGame input[type="radio"] + label:before {
-						background: rgba(255, 255, 255, 0.075);
-						border-color: rgba(255, 255, 255, 0.25);
-					}
-	
-				.wrapper.styleGame input[type="checkbox"]:checked + label:before,
-				.wrapper.styleGame input[type="radio"]:checked + label:before {
-					background-color: #8a4680;
-					border-color: #8a4680;
-					color: #ffffff;
-				}
-	
-				.wrapper.styleGame input[type="checkbox"]:focus + label:before,
-				.wrapper.styleGame input[type="radio"]:focus + label:before {
-					border-color: #8a4680;
-					box-shadow: 0 0 0 1px #8a4680;
-				}
-	
-				.wrapper.styleGame ::-webkit-input-placeholder {
-					color: #999999 !important;
-				}
-	
-				.wrapper.styleGame :-moz-placeholder {
-					color: #999999 !important;
-				}
-	
-				.wrapper.styleGame ::-moz-placeholder {
-					color: #999999 !important;
-				}
-	
-				.wrapper.styleGame :-ms-input-placeholder {
-					color: #999999 !important;
-				}
-	
-				.wrapper.styleGame .formerize-placeholder {
-					color: #999999 !important;
-				}
-	
-				.wrapper.styleGame ul.alt li {
-					border-top-color: rgba(255, 255, 255, 0.25);
-				}
-	
-				.wrapper.styleGame header p {
-					color: #999999;
-				}
-	
-				.wrapper.styleGame table tbody tr {
-					border-color: rgba(255, 255, 255, 0.25);
-				}
-	
-					.wrapper.styleGame table tbody tr:nth-child(2n + 1) {
-						background-color: rgba(255, 255, 255, 0.075);
-					}
-	
-				.wrapper.styleGame table th {
-					color: #ffffff;
-				}
-	
-				.wrapper.styleGame table thead {
-					border-bottom-color: rgba(255, 255, 255, 0.25);
-				}
-	
-				.wrapper.styleGame table tfoot {
-					border-top-color: rgba(255, 255, 255, 0.25);
-				}
-	
-				.wrapper.styleGame table.alt tbody tr td {
-					border-color: rgba(255, 255, 255, 0.25);
-				}
-	
-				.wrapper.styleGame .inner {
-					position: relative;
-					z-index: 2;
-				}
-	
-				.wrapper.styleGame p {
-					text-transform: uppercase;
-					font-size: .75rem;
-					font-weight: 300;
-					margin: 0 0 .5rem 0;
-					padding: 0 0 1rem 0;
-					letter-spacing: .25rem;
-				}
-	
-					.wrapper.styleGame p:after {
-						content: '';
-						position: absolute;
-						margin: auto;
-						right: 0;
-						bottom: 0;
-						left: 0;
-						width: 50%;
-						height: 1px;
-						background-color: rgba(255, 255, 255, 0.5);
-					}
-	
-				.wrapper.styleGame:before {
-					-moz-transition: opacity 3s ease;
-					-webkit-transition: opacity 3s ease;
-					-ms-transition: opacity 3s ease;
-					transition: opacity 3s ease;
-					-moz-transition-delay: 1.25s;
-					-webkit-transition-delay: 1.25s;
-					-ms-transition-delay: 1.25s;
-					transition-delay: 1.25s;
-					content: '';
-					display: block;
-					background-color: rgba(0, 0, 0, 0.95);
-					height: 100%;
-					left: 0;
-					opacity: 0.75;
-					position: absolute;
-					top: 0;
-					width: 100%;
-					z-index: 1;
-				}
-	
+.wrapper.styleGame {
+    background-color: #000;
+    color: #bfbfbf;
+    background-image: url(../../images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
 
+.wrapper.styleGame input,
+.wrapper.styleGame select,
+.wrapper.styleGame textarea {
+    color: #ffffff;
+}
 
+.wrapper.styleGame a {
+    color: #8a4680;
+}
 
+.wrapper.styleGame strong,
+.wrapper.styleGame b {
+    color: #ffffff;
+}
 
+.wrapper.styleGame h1,
+.wrapper.styleGame h2,
+.wrapper.styleGame h3,
+.wrapper.styleGame h4,
+.wrapper.styleGame h5,
+.wrapper.styleGame h6 {
+    color: #ffffff;
+}
+
+.wrapper.styleGame blockquote {
+    border-left-color: rgba(255, 255, 255, 0.25);
+}
+
+.wrapper.styleGame code {
+    background: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.wrapper.styleGame hr {
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.wrapper.styleGame .box {
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.wrapper.styleGame input[type="submit"],
+.wrapper.styleGame input[type="reset"],
+.wrapper.styleGame input[type="button"],
+.wrapper.styleGame button,
+.wrapper.styleGame .button {
+    background-color: #f2f2f2;
+    color: #000 !important;
+}
+
+.wrapper.styleGame input[type="submit"]:hover,
+.wrapper.styleGame input[type="reset"]:hover,
+.wrapper.styleGame input[type="button"]:hover,
+.wrapper.styleGame button:hover,
+.wrapper.styleGame .button:hover {
+    background-color: white;
+}
+
+.wrapper.styleGame input[type="submit"]:active,
+.wrapper.styleGame input[type="reset"]:active,
+.wrapper.styleGame input[type="button"]:active,
+.wrapper.styleGame button:active,
+.wrapper.styleGame .button:active {
+    background-color: #e5e5e5;
+}
+
+.wrapper.styleGame input[type="submit"].alt,
+.wrapper.styleGame input[type="reset"].alt,
+.wrapper.styleGame input[type="button"].alt,
+.wrapper.styleGame button.alt,
+.wrapper.styleGame .button.alt {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
+    color: #ffffff !important;
+}
+
+.wrapper.styleGame input[type="submit"].alt:hover,
+.wrapper.styleGame input[type="reset"].alt:hover,
+.wrapper.styleGame input[type="button"].alt:hover,
+.wrapper.styleGame button.alt:hover,
+.wrapper.styleGame .button.alt:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+.wrapper.styleGame input[type="submit"].alt:active,
+.wrapper.styleGame input[type="reset"].alt:active,
+.wrapper.styleGame input[type="button"].alt:active,
+.wrapper.styleGame button.alt:active,
+.wrapper.styleGame .button.alt:active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.wrapper.styleGame input[type="submit"].alt.icon:before,
+.wrapper.styleGame input[type="reset"].alt.icon:before,
+.wrapper.styleGame input[type="button"].alt.icon:before,
+.wrapper.styleGame button.alt.icon:before,
+.wrapper.styleGame .button.alt.icon:before {
+    color: #999999;
+}
+
+.wrapper.styleGame input[type="submit"].special,
+.wrapper.styleGame input[type="reset"].special,
+.wrapper.styleGame input[type="button"].special,
+.wrapper.styleGame button.special,
+.wrapper.styleGame .button.special {
+    background-color: #8a4680;
+    color: #ffffff !important;
+}
+
+.wrapper.styleGame input[type="submit"].special:hover,
+.wrapper.styleGame input[type="reset"].special:hover,
+.wrapper.styleGame input[type="button"].special:hover,
+.wrapper.styleGame button.special:hover,
+.wrapper.styleGame .button.special:hover {
+    background-color: #9b4f90;
+}
+
+.wrapper.styleGame input[type="submit"].special:active,
+.wrapper.styleGame input[type="reset"].special:active,
+.wrapper.styleGame input[type="button"].special:active,
+.wrapper.styleGame button.special:active,
+.wrapper.styleGame .button.special:active {
+    background-color: #793d70;
+}
+
+.wrapper.styleGame label {
+    color: #ffffff;
+}
+
+.wrapper.styleGame input[type="text"],
+.wrapper.styleGame input[type="password"],
+.wrapper.styleGame input[type="email"],
+.wrapper.styleGame select,
+.wrapper.styleGame textarea {
+    background: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.wrapper.styleGame input[type="text"]:focus,
+.wrapper.styleGame input[type="password"]:focus,
+.wrapper.styleGame input[type="email"]:focus,
+.wrapper.styleGame select:focus,
+.wrapper.styleGame textarea:focus {
+    border-color: #8a4680;
+    box-shadow: 0 0 0 1px #8a4680;
+}
+
+.wrapper.styleGame .select-wrapper:before {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.wrapper.styleGame input[type="checkbox"]+label,
+.wrapper.styleGame input[type="radio"]+label {
+    color: #bfbfbf;
+}
+
+.wrapper.styleGame input[type="checkbox"]+label:before,
+.wrapper.styleGame input[type="radio"]+label:before {
+    background: rgba(255, 255, 255, 0.075);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.wrapper.styleGame input[type="checkbox"]:checked+label:before,
+.wrapper.styleGame input[type="radio"]:checked+label:before {
+    background-color: #8a4680;
+    border-color: #8a4680;
+    color: #ffffff;
+}
+
+.wrapper.styleGame input[type="checkbox"]:focus+label:before,
+.wrapper.styleGame input[type="radio"]:focus+label:before {
+    border-color: #8a4680;
+    box-shadow: 0 0 0 1px #8a4680;
+}
+
+.wrapper.styleGame ::-webkit-input-placeholder {
+    color: #999999 !important;
+}
+
+.wrapper.styleGame :-moz-placeholder {
+    color: #999999 !important;
+}
+
+.wrapper.styleGame ::-moz-placeholder {
+    color: #999999 !important;
+}
+
+.wrapper.styleGame :-ms-input-placeholder {
+    color: #999999 !important;
+}
+
+.wrapper.styleGame .formerize-placeholder {
+    color: #999999 !important;
+}
+
+.wrapper.styleGame ul.alt li {
+    border-top-color: rgba(255, 255, 255, 0.25);
+}
+
+.wrapper.styleGame header p {
+    color: #999999;
+}
+
+.wrapper.styleGame table tbody tr {
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.wrapper.styleGame table tbody tr:nth-child(2n+1) {
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+.wrapper.styleGame table th {
+    color: #ffffff;
+}
+
+.wrapper.styleGame table thead {
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.wrapper.styleGame table tfoot {
+    border-top-color: rgba(255, 255, 255, 0.25);
+}
+
+.wrapper.styleGame table.alt tbody tr td {
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.wrapper.styleGame .inner {
+    position: relative;
+    z-index: 2;
+}
+
+.wrapper.styleGame p {
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 300;
+    margin: 0 0 .5rem 0;
+    padding: 0 0 1rem 0;
+    letter-spacing: .25rem;
+}
+
+.wrapper.styleGame p:after {
+    content: '';
+    position: absolute;
+    margin: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.wrapper.styleGame:before {
+    -moz-transition: opacity 3s ease;
+    -webkit-transition: opacity 3s ease;
+    -ms-transition: opacity 3s ease;
+    transition: opacity 3s ease;
+    -moz-transition-delay: 1.25s;
+    -webkit-transition-delay: 1.25s;
+    -ms-transition-delay: 1.25s;
+    transition-delay: 1.25s;
+    content: '';
+    display: block;
+    background-color: rgba(0, 0, 0, 0.95);
+    height: 100%;
+    left: 0;
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
