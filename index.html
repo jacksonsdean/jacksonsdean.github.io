@@ -505,7 +505,7 @@
 
 			
 				function upgradeImage(object) {
-
+					$(object).addClass("hidden");
 					var img = new Image();
 					img.onload = function() {
 
@@ -513,6 +513,7 @@
 					$(target).attr('src', $(object).attr("src"));
 					$(object).parent("article").css('background-image', 'url("' +$(object).attr("src") + '")');
 					$(object).parent("section").css('background-image', 'url("' +$(object).attr("src") + '")');
+					$(object).removeClass("hidden");
 					$(object).remove();
 					}
 					img.src = $(object).attr("src");
