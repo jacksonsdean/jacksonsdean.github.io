@@ -3565,6 +3565,7 @@ table.alt tbody tr td {
     display: block;
     margin: auto;
     position: relative;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 980px) {
@@ -4170,6 +4171,7 @@ body.subpage {
     max-width: 100%;
     height: auto;
     max-height: 100%;
+    min-height: 100%;
     object-fit: cover;
     z-index: auto;
     top: 0;
