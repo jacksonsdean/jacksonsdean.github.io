@@ -505,11 +505,18 @@
 
 			
 				function upgradeImage(object) {
-					var target = object.previousElementSibling;
+
+					var img = new Image();
+					img.onload = function() {
+
+						var target = object.previousElementSibling;
 					$(target).attr('src', $(object).attr("src"));
 					$(object).parent("article").css('background-image', 'url("' +$(object).attr("src") + '")');
 					$(object).parent("section").css('background-image', 'url("' +$(object).attr("src") + '")');
 					$(object).remove();
+					}
+					img.src = $(object).attr("src");
+
 				}
 
 			</script>
