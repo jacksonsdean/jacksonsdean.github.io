@@ -3065,6 +3065,57 @@ table.alt tbody tr td {
     position: relative;
 }
 
+.wrapper.style3.vid {
+    background-color: #000;
+    color: #bfbfbf;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.wrapper.style3.vidContainer {
+    position: fixed;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.wrapper.style3.vid video {
+    max-height: 30vh;
+    object-fit: cover;
+    display: block;
+    float: left;
+    position: absolute;
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: auto;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.wrapper.style3 video {
+    max-height: 30vh;
+    object-fit: cover;
+    display: block;
+    float: left;
+    position: absolute;
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: auto;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .wrapper.style3 input,
 .wrapper.style3 select,
 .wrapper.style3 textarea {
@@ -3319,6 +3370,27 @@ table.alt tbody tr td {
 }
 
 .wrapper.style3:before {
+    -moz-transition: opacity 3s ease;
+    -webkit-transition: opacity 3s ease;
+    -ms-transition: opacity 3s ease;
+    transition: opacity 3s ease;
+    -moz-transition-delay: 1.25s;
+    -webkit-transition-delay: 1.25s;
+    -ms-transition-delay: 1.25s;
+    transition-delay: 1.25s;
+    content: '';
+    display: block;
+    background-color: rgba(0, 0, 0, 0.95);
+    height: 100%;
+    left: 0;
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.wrapper.style3 video:before {
     -moz-transition: opacity 3s ease;
     -webkit-transition: opacity 3s ease;
     -ms-transition: opacity 3s ease;

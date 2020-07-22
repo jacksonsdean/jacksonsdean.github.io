@@ -176,14 +176,20 @@
 
 
 
-    <section id="smaller_projects" class="wrapper style3" style="background-image: url(images/chromatic-small.gif);">
-        <img class="hidden-image" src="images/chromatic.gif" alt="" onloadstart="upgradeImage(this);" />
+    <!-- <section id="smaller_projects" class="wrapper style3" style="background-image: url(images/chromatic-small.gif);"> -->
+    <!-- <img class="hidden-image" src="images/chromatic.gif" alt="" onloadstart="upgradeImage(this);" /> -->
+    <section id="smaller_projects" class="wrapper style3" style="background-image: none;">
+        <video autoplay loop muted poster="images/chromatic-small.gif">
+            <source src="images/chromatic-short.mp4" type="video/mp4 ">
+        </video>
+
         <div class="inner">
             <header class="align-center">
                 <p>Smaller Projects</p>
                 <h2>Prototypes and smaller games</h2>
             </header>
         </div>
+
     </section>
 
 
@@ -343,13 +349,21 @@
 
     <!-- Jam -->
 
-
-    <section id="jam" class="wrapper style2">
+    <section id="jam" class="wrapper style3" style="background-image: none;">
+        <video autoplay loop muted poster="images/parasite-gameplay-tiny.png">
+            <source src="images/parasite-short.mp4" type="video/mp4 ">
+        </video>
         <div class="inner">
             <header class="align-center">
                 <p class="special">Work in progress, check back later</p>
                 <h2>Game Jam Games</h2>
             </header>
+        </div>
+        </div>
+
+    </section>
+    <section class="wrapper style2">
+        <div class="inner">
             <div class="gallery">
 
                 <div>
@@ -401,8 +415,12 @@
 
 
     <!-- Watty -->
-    <section id="watty" class="wrapper style3" style="background-image: url(images/physics-small.gif);">
-        <img class="hidden-image " src="images/physics.gif " alt=" " onloadstart="upgradeImage(this); " />
+    <section id="watty" class="wrapper style3 vid">
+        <div class="vidContainer">
+            <video autoplay loop muted poster="images/physics-tiny.png ">
+            <source src="images/physics-short.mp4 " type="video/mp4 ">
+        </video>
+        </div>
 
         <div class="inner ">
             <header class="align-center ">
@@ -428,7 +446,7 @@
                         <a href=" " onclick="alertNotReady() ">
                             <video autoplay loop muted poster="images/watty-small.apng ">
                                 <source src="images/watty-short.mp4 " type="video/mp4 ">
-                                <img src="images/watty-small.apng" alt=" " />
+                                <img src="images/watty-small.apng " alt=" " />
                             </video>
 
                             <!-- <img src="images/watty-small.gif " alt="Watty Image " />
@@ -493,7 +511,7 @@
 
                                 <video autoplay loop muted poster="images/watty-small.apng ">
                                     <source src="images/watty-short.mp4 " type="video/mp4 ">
-                                    <img src="images/watty-small.apng" alt=" " />
+                                    <img src="images/watty-small.apng " alt=" " />
                                 </video>
                             </a>
                         </div>
@@ -545,21 +563,29 @@
 
 
     <!-- Other -->
-
-
-    <section id="other " class="wrapper style2 ">
+    <section id="jam " class="wrapper style3 " style="background-image: none; ">
+        <video autoplay loop muted poster="images/machine-learning-small.gif ">
+            <source src="images/machine-learning.mp4 " type="video/mp4 ">
+        </video>
         <div class="inner ">
             <header class="align-center ">
                 <p class="special ">Stuff that isn't games</p>
                 <h2>Other Projects</h2>
             </header>
+        </div>
+        </div>
+    </section>
+
+    <section id="other " class="wrapper style2 ">
+        <div class="inner ">
+
             <div class="gallery ">
 
                 <div>
                     <div class="box ">
                         <div class="image max-height ">
                             <a href="games/machine_learning.html ">
-                                <video autoplay loop muted preload="auto " poster="images/machine_learning.jpg ">
+                                <video autoplay loop muted poster="images/machine_learning.jpg ">
                                     <source src="images/machine-learning.mp4 " type="video/mp4 ">
                                     <img src="images/machine-learning-small.gif " alt=" " />
                                     </video>
