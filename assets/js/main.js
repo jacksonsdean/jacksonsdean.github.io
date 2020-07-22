@@ -199,6 +199,8 @@ var settings = {
 
 					var $slide = $(this),
 						$img = $slide.find('img');
+					
+					
 
 					// Slide.
 						$slide

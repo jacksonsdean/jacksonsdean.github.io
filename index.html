@@ -45,9 +45,11 @@
 			</nav>
 
 		<!-- Banner -->
-			<section class="banner full">
+			<section id = "top-banner" class="banner full">
 				<article>
-					<img src="images/space.gif" alt="" />
+					<img src="images/space-small.gif" alt=""/>
+					<img class="hidden" src="images/space.gif" alt="" onload="upgradeImage(this);"/>
+					
 					<div class="inner">
 						<a href="#portfolio">
 						<header>
@@ -58,30 +60,34 @@
 					</div>
 				</article>
 				<article>
-					<img src="images/runner.gif" alt="" />
+					<img src="images/runner-small.gif" alt="" />
+					<img class="hidden" src="images/runner.gif" alt="" onload="upgradeImage(this);"/>
+					
 					<div class="inner">
 						<a href="#weekly">
-						<header>
-							<p>Games I made in a week</p>
-							<h2>Weekly Games</h2>
-						</header>
+							<header>
+								<p>Games I made in a week</p>
+								<h2>Weekly Games</h2>
+							</header>
 						</a>
 					</div>
 				</article>
 				<article>
-					<img src="images/parasite_gameplay.gif"  alt="" />
+					<img src="images/parasite-gameplay-small.gif"  alt="" />
+					<img class="hidden" src="images/parasite_gameplay.gif" alt="" onload="upgradeImage(this);"/>
 					<div class="inner">
 						<a href="#jam">
-						<header>
-							<p>Games I made during a game jam</p>
-							<h2>Jam Games</h2>
-						</header>
+							<header>
+								<p>Games I made during a game jam</p>
+								<h2>Jam Games</h2>
+							</header>
 						</a>
 					</div>
 				</article>
-			
+				
 				<article>
-					<img src="images/watty.gif"  alt="" />
+					<img src="images/watty-small.apng"  alt="" />
+					<img class="hidden" src="images/watty.gif" alt="" onload="upgradeImage(this);"/>
 					<div class="inner">
 						<a href="#watty">
 						<header>
@@ -137,7 +143,9 @@
 							<div class="box">
 									<div class="image max-height">
 								<a href="games/machine_learning.html">
-									<img src="images/machine_learning.gif" alt="Machine Learning Demo Gif" />
+									<img src="images/machine-learning-small.gif" alt="Machine Learning Demo Gif" />
+									<img class="hidden" src="images/machine_learning.gif" alt="" onload="upgradeImage(this);"/>
+
 								</a>
 
 								</div>
@@ -160,7 +168,8 @@
 
 
 
-			<section id="smaller_projects" class="wrapper style3" style="background-image: url(images/chromatic.gif);">
+			<section id="smaller_projects" class="wrapper style3" style="background-image: url(images/chromatic-small.gif);">
+				<img class="hidden" src="images/chromatic.gif" alt="" onload="upgradeImage(this);"/>
 				<div class="inner">
 					<header class="align-center">
 						<p>Smaller Projects</p>
@@ -205,7 +214,9 @@
 				<div class="box">
 					<div class="image max-height">
 						<a href="games/space.html">
-							<img src="images/space.gif" alt="" />
+							<img src="images/space-small.gif" alt="" />
+							<img class="hidden" src="images/space.gif" alt="" onload="upgradeImage(this);"/>
+
 						</a>
 					</div>
 					<div class="content">
@@ -225,7 +236,9 @@
 				<div class="box">
 					<div class="image max-height">
 						<a href="games/chromatic.html">
-							<img src="images/chromatic.gif" alt="" />
+							<img src="images/chromatic-small.gif" alt="" />
+							<img class="hidden" src="images/chromatic.gif" alt="" onload="upgradeImage(this);"/>
+
 						</a>
 					</div>
 					<div class="content">
@@ -260,7 +273,9 @@
 				<div class="box">
 					<div class="image max-height">
 						<a href="games/nimble.html">
-							<img src="images/nimble.gif" alt="" />
+							<img src="images/nimble.png" alt="" />
+							<img class="hidden" src="images/nimble.gif" alt="" onload="upgradeImage(this);"/>
+
 						</a>
 					</div>
 					<div class="content">
@@ -340,7 +355,10 @@
 
 
 		<!-- Watty -->
-		<section id="watty" class="wrapper style3" style="background-image: url(images/physics.gif);">
+		<section id="watty" class="wrapper style3" style="background-image: url(images/physics-small.gif);">
+			<img class="hidden" src="images/physics.gif" alt="" onload="upgradeImage(this);"/>
+
+			
 			<div class="inner">
 				<header class="align-center">
 					<p>My open-source game engine</p>
@@ -363,7 +381,8 @@
 					<div class="box">
 						<div class="image max-height" >
 							<a href="" onclick="alertNotReady()">
-								<img src="images/watty.gif" alt="Watty Image" />
+								<img src="images/watty-small.gif" alt="Watty Image" />
+								<img class="hidden" src="images/watty.gif" alt="" onload="upgradeImage(this);"/>
 							</a>
 						</div>
 						<div class="content">
@@ -381,7 +400,8 @@
 					<div class="box">
 						<div class="image max-height" >
 							<a href="" onclick="alertNotReady()">
-								<img src="images/physics.gif" alt="Watty demos image" />
+								<img src="images/physics-small.gif" alt="Physics Demo Gif" />
+								<img class="hidden" src="images/physics.gif" alt="" onload="upgradeImage(this);"/>
 							</a>
 						</div>
 						<div class="content">
@@ -410,7 +430,9 @@
 						<div class="box">
 							<div class="image max-height" >
 								<a href="" onclick="alertNotReady()">
-									<img src="images/watty.gif" alt="Fallen Atlas Image" />
+									<img src="images/watty-small.gif" alt="Watty Particles Gif" />
+								<img class="hidden" src="images/watty.gif" alt="" onload="upgradeImage(this);"/>
+
 								</a>
 							</div>
 							<div class="content">
@@ -429,7 +451,9 @@
 						<div class="box">
 							<div class="image max-height" >
 								<a href="" onclick="alertNotReady()">
-									<img src="images/physics.gif" alt="Fallen Atlas Image" />
+									<img src="images/physics-small.gif" alt="Physics Demo Gif" />
+								<img class="hidden" src="images/physics.gif" alt="" onload="upgradeImage(this);"/>
+
 								</a>
 							</div>
 							<div class="content">
@@ -477,6 +501,15 @@
 			<script>
 				function alertNotReady(){
 					alert("The latest version of Watty hasn't been uploaded to the website yet, check back in a few days.\nThanks!");
+				}
+
+			
+				function upgradeImage(object) {
+					var target = object.previousElementSibling;
+					$(target).attr('src', $(object).attr("src"));
+					$(object).parent("article").css('background-image', 'url("' +$(object).attr("src") + '")');
+					$(object).parent("section").css('background-image', 'url("' +$(object).attr("src") + '")');
+					$(object).remove();
 				}
 
 			</script>

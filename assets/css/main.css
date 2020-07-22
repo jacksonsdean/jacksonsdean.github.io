@@ -4169,7 +4169,7 @@
 				top: 0;
 				left: 0;
 				background: #000;
-				opacity: 0.35;
+				opacity: .55;
 			}
 
 			.banner > article .inner {
@@ -4224,6 +4224,10 @@
 			}
 
 			.banner > article img {
+				display: none;
+
+			}
+			.banner > article video {
 				display: none;
 			}
 
