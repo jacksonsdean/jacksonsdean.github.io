@@ -3557,6 +3557,16 @@ table.alt tbody tr td {
     position: relative;
 }
 
+.gallery video {
+    max-height: 50vh;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
 @media screen and (max-width: 980px) {
     .gallery>* {
         width: 100%;

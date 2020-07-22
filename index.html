@@ -124,10 +124,12 @@
 			  </video>
 
             <div class="inner">
-                <header>
-                    <p>Apps, web design, music, etc.</p>
-                    <h2>Other Projects</h2>
-                </header>
+                <a href="#other">
+                    <header>
+                        <p>Apps, web design, music, etc.</p>
+                        <h2>Other Projects</h2>
+                    </header>
+                </a>
             </div>
         </article>
 
@@ -166,28 +168,7 @@
                     </div>
                 </div>
 
-                <div>
-                    <div class="box">
-                        <div class="image max-height">
-                            <a href="games/machine_learning.html">
-                                <img src="images/machine-learning-small.gif" alt="Machine Learning Demo Gif" />
-                                <img class="hidden-image" src="images/machine_learning.gif" alt="" onloadstart="upgradeImage(this);" />
 
-                            </a>
-
-                        </div>
-                        <div class="content">
-                            <header class="align-center">
-                                <p>AI concepts in game design</p>
-                                <h2>Machine Learning Demo</h2>
-                            </header>
-                            <p>Demonstrates different machine learning concepts using Unity's MLAgents</p>
-                            <footer class="align-center">
-                                <a href="games/machine_learning.html" class="button alt">See the project</a>
-                            </footer>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -241,8 +222,14 @@
                     <div class="box">
                         <div class="image max-height">
                             <a href="games/space.html">
-                                <img src="images/space-tiny.png" alt="" />
-                                <img class="hidden-image" src="images/space.gif" alt="" onloadstart="upgradeImage(this);" />
+
+                                <video autoplay loop muted preload="auto" poster="images/space-tiny.png">
+                                    <source src="images/space-short.mp4" type="video/mp4">
+                                    <img src="images/space-tiny.png" alt="" />
+                                    </video>
+
+                                <!-- <img src="images/space-tiny.png" alt="" /> -->
+                                <!-- <img class="hidden-image" src="images/space.gif" alt="" onloadstart="upgradeImage(this);" /> -->
 
                             </a>
                         </div>
@@ -285,8 +272,14 @@
                     <div class="box">
                         <div class="image max-height">
                             <a href="games/runner.html">
-                                <img src="images/runner.jpg" alt="" />
-                                <img class="hidden-image" src="images/runner.gif" alt="" onloadstart="upgradeImage(this);" />
+
+                                <video autoplay loop muted preload="auto" poster="images/runner.jpg">
+                                    <source src="images/runner-short.mp4" type="video/mp4">
+                                    <img src="images/runner.jpg" alt="" />
+                                    </video>
+
+                                <!-- <img src="images/runner.jpg" alt="" />
+                                <img class="hidden-image" src="images/runner.gif" alt="" onloadstart="upgradeImage(this);" /> -->
 
                             </a>
                         </div>
@@ -525,6 +518,93 @@
 
 
     </section>
+
+
+
+
+
+    <!-- Other -->
+
+
+    <section id="other" class="wrapper style2">
+        <div class="inner">
+            <header class="align-center">
+                <p class="special">Stuff that isn't games</p>
+                <h2>Other Projects</h2>
+            </header>
+            <div class="gallery">
+
+                <div>
+                    <div class="box">
+                        <div class="image max-height">
+                            <a href="games/machine_learning.html">
+                                <video autoplay loop muted preload="auto" poster="images/machine_learning.jpg">
+                                    <source src="images/machine-learning.mp4" type="video/mp4">
+                                    <img src="images/machine-learning-small.gif" alt="" />
+                                    </video>
+                                <!--                                
+                                <img src="images/machine-learning-small.gif" alt="Machine Learning Demo Gif" />
+                                <img class="hidden-image" src="images/machine_learning.gif" alt="" onloadstart="upgradeImage(this);" /> -->
+
+                            </a>
+
+                        </div>
+                        <div class="content">
+                            <header class="align-center">
+                                <p>AI concepts in game design</p>
+                                <h2>Machine Learning Demo</h2>
+                            </header>
+                            <p>Demonstrates different machine learning concepts using Unity's MLAgents</p>
+                            <footer class="align-center">
+                                <a href="games/machine_learning.html" class="button alt">See the project</a>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="box">
+                        <div class="image max-height">
+                            <a href="https://play.google.com/store/apps/details?id=com.jackson.handwashingapp">
+                                <img src="images/hand-wash-screenshot.png" alt="Hand wash app screenshot" />
+
+                            </a>
+
+                        </div>
+                        <div class="content">
+                            <header class="align-center">
+                                <p>Android App</p>
+                                <h2>Handwashing Reminders</h2>
+                            </header>
+                            <p>An app that allows you to set up reminders to wash your hands. Choose to be reminded: </p>
+                            <ul>
+                                <li>When you arrive somewhere.
+                                    <ul style="margin: 0;">
+                                        <li>Like when you get home from being out or when you arrive at work. </li>
+                                    </ul>
+                                </li>
+                                <li>At a certain time</li>
+                                <li>Periodically throughout the day.</li>
+                            </ul>
+                            <p>Make sure you spend enough time washing your hands with the newly added timer!</p>
+                            <footer class="align-center">
+                                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.jackson.handwashingapp" class="button alt">See the app on Google Play</a>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
 
 
     <!-- Footer -->
