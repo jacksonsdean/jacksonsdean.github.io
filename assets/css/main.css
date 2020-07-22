@@ -4157,6 +4157,7 @@ body.subpage {
     float: left;
     position: absolute;
     width: 100vw;
+    max-width: 100%;
     height: auto;
     max-height: 100%;
     object-fit: cover;
@@ -4164,6 +4165,17 @@ body.subpage {
     top: 0;
     left: 0;
     margin: 0;
+    -moz-animation: fade-out 3s ease-in forwards;
+    /* Firefox */
+    -webkit-animation: fade-out 3s ease-in forwards;
+    /* Safari and Chrome */
+    -o-animation: fade-out 3s ease-in forwards;
+    /* Opera */
+    animation: fade-out 3s ease-in forwards;
+    -moz-animation-delay: 7s;
+    -webkit-animation-delay: 7s;
+    -o-animation-delay: 7s;
+    animation-delay: 7s;
 }
 
 .banner>article.visible {
