@@ -3617,9 +3617,11 @@
 
 			.gallery .image.max-height img
 			{
-				max-height: 20rem;
+				max-height: 50vh;
+				max-width: 100%;
 				width: auto;
-
+				height: auto;
+				display: block;
 				margin: auto;
 				position: relative;
 			}
