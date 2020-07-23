@@ -284,11 +284,22 @@ var settings = {
                 $body.removeClass('is-loading');
             }, 100);
         });
+
         // $window.on('load', function() {
         // 	window.setTimeout(function() {
         // 		$body.removeClass('is-loading');
         // 	}, 100);
         // });
+
+
+
+
+        $window.on('load', function() {
+            window.setInterval(function() {
+                /// call your function here
+                checkParallaxVids();
+            }, 300);
+        });
 
         // Prioritize "important" elements on medium.
         skel.on('+medium -medium', function() {
@@ -336,5 +347,32 @@ var settings = {
         }
 
     });
+
+    function checkParallaxVids() {
+        var vidWrappers = document.getElementsByClassName('styleVid');
+        for (var i = 0; i < vidWrappers.length; ++i) {
+            var item = $(vidWrappers[i]);
+            console.log(item[0]);
+            var txt = item[0].getElementsByTagName('h2')[0];
+            var vid = item[0].getElementsByTagName('video')[0];
+            if (isInViewport(txt)) {
+                $(vid).removeClass("hidden")
+            } else {
+                $(vid).addClass("hidden")
+            }
+        }
+
+    }
+
+    function isInViewport(elem) {
+        var bounding = elem.getBoundingClientRect();
+        return (
+            bounding.top + 200 >= 0 &&
+            bounding.left >= 0 &&
+            bounding.bottom - 200 <= (window.innerHeight || document.documentElement.clientHeight) &&
+            bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    };
+
 
 })(jQuery);
