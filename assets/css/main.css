@@ -169,7 +169,7 @@ body {
 
 .ParallaxVideo video {
     min-width: 100%;
-    max-width: 100%;
+    /* max-width: 100%; */
     position: fixed;
     top: 0;
     z-index: -999;
@@ -3817,13 +3817,13 @@ body.subpage {
     display: inline-block;
     height: inherit;
     /* left: 1.25em; */
-    left: 1vw;
+    left: 2vh;
     line-height: inherit;
     margin: 0;
     padding: 0;
     position: absolute;
     top: 0;
-    max-width: 20vw;
+    max-width: 30vw;
 }
 
 #header>.logo a {
@@ -3891,6 +3891,13 @@ body.subpage {
 @media screen and (max-width: 736px) {
     #header>a {
         padding: 0 0.5em;
+    }
+    #header>.logo {
+        height: 10vh;
+        max-width: 100vw;
+    }
+    #header>.logo a {
+        font-size: 2.25vh;
     }
     #header>a+a[href="#menu"]:last-child {
         padding-left: 1em;
