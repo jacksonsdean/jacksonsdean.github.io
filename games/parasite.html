@@ -17,9 +17,22 @@
     <title>Parasite | Jackson Dean</title>
     <script src="Build/UnityLoader.js"></script>
     <script>
-        var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Parasite/Build_Web.json", {
-            onProgress: UnityProgress
-        });
+        var unityInstance;
+        var settings = {
+            onProgress: UnityProgress,
+            Module: {
+                preRun: [function() {}],
+                postRun: [function() {
+                    // window.setTimeout(function() {
+                    //     unityInstance.SetFullscreen(1);
+                    // }, 2500)
+                }],
+            }
+        };
+
+        unityInstance = UnityLoader.instantiate("unityContainer", "Build/Parasite/Build_Web.json",
+            settings
+        );
     </script>
 
 
@@ -47,7 +60,7 @@
     <section id="game" class="wrapper styleGame" style="background-image:url('../images/grey_wall.jpg')">
 
         <div class="inner">
-            <div id="unityContainer" style="width: 1300px; height: 788px"></div>
+            <div id="unityContainer"></div>
             <div class="footer">
                 <button class="fullscreen_button" onclick="unityInstance.SetFullscreen(1)" style="background-image: url('TemplateData/fullscreen.png');"><br></button>
                 <div class="title">Parasite</div>
@@ -59,5 +72,11 @@
         </div>
     </section>
 </body>
+
+<script>
+    document.onload = (event) => {
+        unityInstance.SetFullscreen(1);
+    }
+</script>
 
 </html>
