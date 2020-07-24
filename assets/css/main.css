@@ -3144,6 +3144,15 @@ table.alt tbody tr td {
     color: #ffffff;
 }
 
+.wrapper.styleVid h1,
+.wrapper.styleVid h2,
+.wrapper.styleVid h3,
+.wrapper.styleVid h4,
+.wrapper.styleVid h5,
+.wrapper.styleVid h6 {
+    color: #ffffff;
+}
+
 .wrapper.style3 blockquote {
     border-left-color: rgba(255, 255, 255, 0.25);
 }
