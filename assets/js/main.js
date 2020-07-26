@@ -176,7 +176,6 @@ var settings = {
                 indicators[pos].addClass('visible');
 
 
-
             // Finish hiding last slide after a short delay.
             window.setTimeout(function() {
 
@@ -235,9 +234,7 @@ var settings = {
 
                     // Add to indicators.
                     indicators.push($indicator_li);
-
                 }
-
                 i++;
 
             })
@@ -285,13 +282,15 @@ var settings = {
             }, 100);
         });
 
+        window.setTimeout(function() {
+            $body.removeClass('is-loading');
+        }, 2000);
+
         // $window.on('load', function() {
         // 	window.setTimeout(function() {
         // 		$body.removeClass('is-loading');
         // 	}, 100);
         // });
-
-
 
 
         $window.on('load', function() {
