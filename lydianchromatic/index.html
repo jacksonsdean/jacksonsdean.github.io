@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+    <title>Lydian Chromatic</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <script src="https://kit.fontawesome.com/c29350930a.js" crossorigin="anonymous"></script>
+
+    <!--MailChimp-->
+    <script id="mcjs">
+        ! function(c, h, i, m, p) {
+            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
+        }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/6567dd34ecd4d4f21831b0826/2381074bee680fa911846ae0e.js");
+    </script>
+
+
+</head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169262722-1"></script>
+
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-169262722-1');
+</script>
+
+
+<body>
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <div class="logo"><a href="/lydianchromatic">Jackson Dean <span>| Game Developer</span></a></div>
+        <!-- <a href="#menu">Menu</a> -->
+    </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="/lydianchromatic">Home</a></li>
+            <!--<li><a href="factory.html">Factory Game</a></li>
+					<li><a href="weekly.html">Weekly Games</a></li>
+					<li><a href="watty.html">Watty Game Engine</a></li>
+					-->
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+
+    <section id="top-banner" class="banner full">
+        <article>
+            <src="images/banner.png" alt="" />
+            <div class="inner">
+                <a href="#portfolio">
+                    <header>
+                        <p>Our Games</p>
+                        <h2>Games by Lydian Chromatic</h2>
+                    </header>
+                </a>
+            </div>
+        </article>
+
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer id="footer ">
+        <div class="container ">
+            <ul class="icons ">
+                <li><a target="_blank " href="https://twitter.com/LydianGames " class="icon fa-twitter "><span class="label ">Twitter</span></a></li>
+                <li><a target="_blank " href="https://www.facebook.com/Lydian-Chromatic-Games-106660224467475 " class="icon fa-facebook "><span class="label ">Facebook</span></a></li>
+                <li><a target="_blank " href="https://www.instagram.com/lydianchromatic/ " class="icon fa-instagram "><span class="label ">Instagram</span></a></li>
+                <li><a target="_blank " href="https://www.youtube.com/channel/UCWCmhKBiBgqx-RswULM0uoQ " class="icon fa-youtube "><span class="label ">YouTube</span></a></li>
+                <li><a target="_blank " href="https://lydianchromatic.itch.io/ " class="icon fa-itch-io "><span class="label ">Itch</span></a></li>
+                <li><a target="_blank " href="mailto:jackson.lydianchromatic@gmail.com " class="icon fa-envelope "><span class="label ">Email</span></a></li>
+            </ul>
+        </div>
+        <div class="copyright ">
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js "></script>
+    <script src="../assets/js/jquery.scrollex.min.js "></script>
+    <script src="../assets/js/skel.min.js "></script>
+    <script src="../assets/js/util.js "></script>
+    <script src="../assets/js/main.js "></script>
+
+    <script>
+        function alertNotReady() {
+            alert("The latest version of Watty hasn't been uploaded to the website yet, check back in a few days.\nThanks!");
+        }
+
+
+        function upgradeImage(object) {
+            $(object).height = 0;
+            $(object).addClass("hidden");
+            var img = new Image();
+            img.onload = function() {
+                var target = object.previousElementSibling;
+                $(target).attr('src ', $(object).attr("src"));
+                $(object).parent("article").css('background-image ', 'url( "' + $(object).attr("src ") + '") ');
+                $(object).parent("section").css('background-image ', 'url( "' + $(object).attr("src ") + '") ');
+                $(object).removeClass("hidden");
+                $(object).remove();
+            }
+            img.src = $(object).attr("src");
+        }
+    </script>
+
+</body>
+
+</html>
