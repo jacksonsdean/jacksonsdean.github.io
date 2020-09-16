@@ -5,16 +5,16 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="../assets/css/main.css" />
-    <link rel="stylesheet" href="games.css" />
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
+    <link rel="shortcut icon" href="/games/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/games/games.css" />
+    <script src="/games/TemplateData/UnityProgress.js"></script>
+    <script src="/games/Build/UnityLoader.js"></script>
 
 
     <title>Runner Prototype | Jackson Dean</title>
     <script>
-        var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Runner/Web.json", {
+        var unityInstance = UnityLoader.instantiate("unityContainer", "/games/Build/Runner/Web.json", {
             onProgress: UnityProgress
         });
     </script>
@@ -40,15 +40,15 @@
 <body>
     <!-- Header -->
     <header id="header" class="alt">
-        <div class="logo"><a href="../index.html">Jackson Dean <span>| Game Developer</span></a></div>
+        <div class="logo"><a href="/">Jackson Dean <span>| Game Developer</span></a></div>
     </header>
 
-    <section id="game" class="wrapper styleGame" style="background-image:url('../images/paper.jpg')">
+    <section id="game" class="wrapper styleGame" style="background-image:url('/images/paper.jpg')">
 
         <div class="inner">
             <div id="unityContainer"></div>
             <div class="footer">
-                <button class="fullscreen_button" onclick="unityInstance.SetFullscreen(1)" style="background-image: url('TemplateData/fullscreen.png');"><br></button>
+                <button class="fullscreen_button" onclick="unityInstance.SetFullscreen(1)" style="background-image: url('/games/TemplateData/fullscreen.png');"><br></button>
                 <h2>Untitled Procedural Runner Prototype</h2>
             </div>
 
