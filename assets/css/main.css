@@ -192,6 +192,19 @@ body {
     object-fit: cover;
 }
 
+.ParallaxVideo .box video {
+    min-width: unset;
+    width: 60vw;
+    height: auto;
+    /* max-width: 100%; */
+    position: unset;
+    top: unset;
+    z-index: unset;
+    /* display: block; */
+    /* height: 30vh; */
+    object-fit: none;
+}
+
 
 /* Box Model */
 
@@ -1857,6 +1870,18 @@ hr {
 
 
 /* Button */
+
+.image-button {
+    background-color: none;
+    color: white;
+    font-size: 16px;
+    padding: 0 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
+    width: 20vw;
+    height: auto;
+}
 
 input[type="submit"],
 input[type="reset"],
