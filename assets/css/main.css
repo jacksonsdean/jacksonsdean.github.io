@@ -1813,6 +1813,16 @@ hr {
     border-radius: 0;
 }
 
+.box .image.med-height img {
+    max-height: 30vh;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
 .box .image.fit img {
     border-radius: 0;
 }
@@ -3721,6 +3731,16 @@ table.alt tbody tr td {
 
 .gallery .image.max-height img {
     max-height: 50vh;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+.gallery .image.med-height img {
+    max-height: 25vh;
     max-width: 100%;
     width: auto;
     height: auto;
