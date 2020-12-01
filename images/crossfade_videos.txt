@@ -2,3 +2,6 @@
 removes audio, starts from -ss X, lasts -t X, loops with a crossfade of duration "duration" and offset of "offset"
 
 ffmpeg -i NAME.mp4 -filter_complex "[0]trim=end=1,setpts=PTS-STARTPTS[begin];[0]trim=start=1,setpts=PTS-STARTPTS[end];[end][begin]xfade=fade:duration=0.5:offset=10.5,format=yuv420p" -ss 00:00:01 -t 00:00:10 -an OUT.mp4
+
+fade to black:
+ffmpeg -i input.mp4 -filter:v 'fade=in:0:50,fade=out:21000:50'  -c:v libx264 -crf 22 -preset veryfast -c:a copy output.mp4
